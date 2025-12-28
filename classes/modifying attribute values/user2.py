@@ -19,7 +19,7 @@ class User:
     def increment_login_attempts(self):
         """this function increments login attempts by 1"""
         self.login_attempts+=1
-        #return self.login_attempts
+        return self.login_attempts
 
     def reset_login_attempts(self):
         """this function resets the login attempts to 0"""
