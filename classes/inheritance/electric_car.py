@@ -43,7 +43,13 @@ class Battery:
         elif self.battery_size == 65:
             range = 225
         print(f"This car can go about {range} miles on a full charge.")
-
+    def upgrade_battery(self):
+        """check the battery size and upgrade it if necessary"""
+        if self.battery_size != 65:
+            self.battery_size = 65
+            print("Battery upgraded to 65 kWh.")
+        else:
+            print("Battery is already at maximum capacity.")
 class electricCar(car):
     """represent aspects of a car specific to electric vehicles"""
     def __init__(self, make, model, year):
@@ -57,4 +63,8 @@ class electricCar(car):
 my_leaf = electricCar('nissan', 'leaf', 2024)
 print(my_leaf.get_descriptive_name())
 my_leaf.battery.describe_battery()
+my_leaf.battery.get_range()
 
+my_leaf.battery.upgrade_battery()
+my_leaf.battery.get_range()
+my_leaf.battery.upgrade_battery()
