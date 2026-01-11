@@ -1,6 +1,6 @@
 from pathlib import Path
 
-path  = Path('alice.txt')
+path  = Path(r'C:\Users\King Leem\OneDrive\Desktop\Learn_python\filesandexceptions\alice.txt')
 try:
     contents = path.read_text(encoding = 'utf-8') #we  use encoding argument when your systems default encoding system doesnt match the encoding of the file thats being read
 except FileNotFoundError:
