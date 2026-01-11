@@ -1,0 +1,9 @@
+my python journey:
+
+i have learned lists
+files and exceptions
+loops
+object oriented programming
+clean coding
+python libraries and modules
+p
